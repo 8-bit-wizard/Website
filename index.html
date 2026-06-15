@@ -965,7 +965,7 @@
           <input type="hidden" name="access_key" value="9aa1c57c-c649-462e-84c0-0695cf66b356" />
           <input type="hidden" name="subject" value="New Metric Networks Inquiry" />
           <input type="hidden" name="from_name" value="Metric Networks Website" />
-          <input type="hidden" name="redirect" value="false" />
+          <input type="hidden" name="botcheck" value="" />
 
           <div class="form-row">
             <div class="form-group">
@@ -981,6 +981,7 @@
             <div class="form-group">
               <label for="email">Email Address</label>
               <input type="email" id="email" name="email" placeholder="alex@company.com" required />
+              <input type="hidden" name="replyto" id="replyto" />
             </div>
             <div class="form-group">
               <label for="phone">Phone Number</label>
@@ -1104,6 +1105,9 @@
   document.getElementById('contactForm').addEventListener('submit', async e => {
     e.preventDefault();
     const btn = e.target.querySelector('button[type="submit"]');
+    // mirror email → replyto so Web3Forms sets reply-to header
+    const emailVal = document.getElementById('email').value;
+    document.getElementById('replyto').value = emailVal;
     btn.innerHTML = 'Sending...';
     btn.disabled = true;
     try {
