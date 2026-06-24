@@ -1146,5 +1146,22 @@
   });
 </script>
 <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "5664d827fac34c7eaa127d59f02921ef"}'></script><!-- End Cloudflare Web Analytics -->
+<!-- Metric Chatbot Widget -->
+<script>
+fetch('/chatbot.html').then(r=>r.text()).then(html=>{
+  const div = document.createElement('div');
+  div.innerHTML = html;
+  // Inject styles
+  div.querySelectorAll('style').forEach(s => document.head.appendChild(s));
+  // Inject HTML
+  div.querySelectorAll('[id^="mn-"]').forEach(el => document.body.appendChild(el));
+  // Inject scripts
+  div.querySelectorAll('script').forEach(s => {
+    const ns = document.createElement('script');
+    ns.textContent = s.textContent;
+    document.body.appendChild(ns);
+  });
+});
+</script>
 </body>
 </html>
