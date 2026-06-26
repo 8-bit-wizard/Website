@@ -196,6 +196,19 @@
     }
     .info-box strong { color: var(--dark); }
 
+    .chatbot-badge {
+      display: inline-block;
+      background: #ecfdf5;
+      border: 1px solid #6ee7b7;
+      color: #065f46;
+      font-size: 0.78rem;
+      font-weight: 600;
+      padding: 2px 8px;
+      border-radius: 4px;
+      margin-left: 6px;
+      vertical-align: middle;
+    }
+
     /* ── FOOTER ── */
     footer {
       background: var(--dark);
@@ -228,7 +241,7 @@
 
 <div class="page-hero">
   <h1>Privacy Policy</h1>
-  <p class="effective">Effective Date: <span>June 1, 2025</span></p>
+  <p class="effective">Effective Date: <span>June 26, 2025</span> &nbsp;·&nbsp; Last Updated: June 26, 2025</p>
 </div>
 
 <main>
@@ -245,7 +258,7 @@
       <li><a href="#your-rights">Your Rights</a></li>
       <li><a href="#ccpa">California Privacy Rights / CCPA</a></li>
       <li><a href="#gdpr">International Users / GDPR</a></li>
-      <li><a href="#cookies">Cookies</a></li>
+      <li><a href="#cookies">Cookies &amp; Analytics</a></li>
       <li><a href="#childrens-privacy">Children's Privacy</a></li>
       <li><a href="#changes">Changes to This Policy</a></li>
       <li><a href="#contact">Contact Us</a></li>
@@ -253,7 +266,7 @@
   </div>
 
   <p style="color:var(--text-muted);margin-bottom:2.5rem;font-size:0.95rem;">
-    This Privacy Policy describes how <strong style="color:var(--dark);">Metric Networks</strong> ("we," "us," or "our") collects, uses, and protects information you provide when visiting <a href="https://www.metricnetworks.net" style="color:var(--green);">www.metricnetworks.net</a> or contacting us through our website. We are committed to your privacy and handle your information with care.
+    This Privacy Policy describes how <strong style="color:var(--dark);">Metric Networks</strong> ("we," "us," or "our") collects, uses, and protects information you provide when visiting <a href="https://www.metricnetworks.net" style="color:var(--green);">www.metricnetworks.net</a> or interacting with us through our website — including our contact form and AI-assisted chat widget. We are committed to your privacy and handle your information with care.
   </p>
 
   <!-- 1 -->
@@ -271,9 +284,9 @@
   <section class="policy-section" id="information-we-collect">
     <span class="section-number">02</span>
     <h2>Information We Collect</h2>
-    <p>We collect only the information necessary to respond to your inquiry and provide our services. Information is gathered in two ways:</p>
+    <p>We collect only the information necessary to respond to your inquiry and provide our services. Information is gathered in three ways:</p>
 
-    <p><strong>A. Information You Provide Directly</strong></p>
+    <p><strong>A. Contact Form</strong></p>
     <p>When you submit our contact form, we collect the following fields:</p>
     <ul>
       <li><strong>First name</strong> and <strong>last name</strong></li>
@@ -285,46 +298,65 @@
     </ul>
     <p>Providing this information is entirely voluntary. You are not required to submit the form to access our website.</p>
 
-    <p><strong>B. Information Collected Automatically</strong></p>
-    <p>Our hosting provider, Cloudflare Pages, automatically collects certain technical data as part of standard CDN and security operations. This may include:</p>
+    <p><strong>B. Chat Widget (Metric Assistant) <span class="chatbot-badge">Chatbot</span></strong></p>
+    <p>Our website includes an interactive chat assistant ("Metric") powered by a decision-tree chatbot. If you choose to engage with the chat widget and request a consultation or callback, the bot will ask you to provide:</p>
     <ul>
-      <li>Your IP address (used for DDoS mitigation and bot detection)</li>
-      <li>Browser type and version</li>
-      <li>Referring URL and requested page</li>
-      <li>Date and time of access</li>
+      <li><strong>Full name</strong></li>
+      <li><strong>Company name</strong></li>
+      <li><strong>Phone number</strong></li>
+      <li><strong>Service interest</strong> (selected from a menu of options such as Networking, Managed IT, Backup &amp; Data Protection, or General Inquiry)</li>
     </ul>
-    <p>We do not install any analytics scripts (such as Google Analytics) and we do not use tracking pixels or behavioral advertising cookies. Cloudflare's data practices are governed by <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">Cloudflare's Privacy Policy</a>.</p>
+    <p>This information is collected <strong>only if you actively choose to request a consultation</strong> through the chat flow. Simply viewing or navigating the chat widget without submitting your contact details does not result in data collection. Once you confirm submission, your details are sent to our team via Web3Forms (see Section 4).</p>
+    <p>The chat widget does <strong>not</strong> use artificial intelligence that processes free-text input in a way that stores conversational data. It is a button-driven decision-tree with optional free-text fields limited to name, company, and phone number. No chat transcripts are retained beyond the lead submission.</p>
+
+    <p><strong>C. Information Collected Automatically</strong></p>
+    <p>Our website uses the following technologies that collect data automatically:</p>
+    <ul>
+      <li>
+        <strong>Cloudflare Pages (CDN &amp; Security)</strong> — Our hosting provider automatically collects technical data including your IP address (for DDoS mitigation and bot detection), browser type and version, referring URL and requested page, and date/time of access. This is governed by <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">Cloudflare's Privacy Policy</a>.
+      </li>
+      <li>
+        <strong>Google Analytics 4 (GA4)</strong> — We use Google Analytics to understand how visitors use our website. GA4 collects anonymized data including pages visited, time on page, referral source, general geographic region (country/city level), device type, and browser. GA4 does <strong>not</strong> collect your name, email, or phone number. Google acts as a data processor on our behalf. You can opt out of GA4 tracking by using the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener">Google Analytics Opt-out Browser Add-on</a> or by enabling "Do Not Track" in your browser. See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a> for details.
+      </li>
+      <li>
+        <strong>Cloudflare Web Analytics</strong> — We also use Cloudflare's privacy-focused analytics beacon, which collects aggregate page view data without using cookies or fingerprinting. No personal information is collected by this service.
+      </li>
+    </ul>
   </section>
 
   <!-- 3 -->
   <section class="policy-section" id="how-we-use">
     <span class="section-number">03</span>
     <h2>How We Use Your Information</h2>
-    <p>We use the information you submit through our contact form for one primary purpose: <strong>to respond to your inquiry</strong>. Specifically, we may use it to:</p>
+    <p>We use the information you provide through our contact form or chat widget for the following purposes:</p>
     <ul>
-      <li>Reply to your question, request, or service interest via email or phone</li>
-      <li>Route your inquiry to the appropriate member of our team</li>
-      <li>Follow up on an ongoing engagement or sales conversation at your request</li>
+      <li><strong>To respond to your inquiry</strong> — We reply to your question, request, or service interest via email or phone.</li>
+      <li><strong>To route your inquiry</strong> — We direct your request to the appropriate member of our team based on your stated service interest.</li>
+      <li><strong>To follow up on a consultation request</strong> — If you book a consultation through the chat widget, we use your name, company, phone number, and service interest to schedule and conduct that follow-up.</li>
+      <li><strong>To improve our website</strong> — Anonymized analytics data (GA4 and Cloudflare Analytics) is used to understand which pages are most useful and to improve site performance and content.</li>
     </ul>
-    <p>We do <strong>not</strong> use your information for mass marketing campaigns, sell it to lead brokers, or combine it with third-party data profiles. We will only contact you in direct response to your submitted inquiry unless you explicitly request otherwise.</p>
+    <p>We do <strong>not</strong> use your information for mass marketing campaigns, sell it to lead brokers, or combine it with third-party data profiles. We will only contact you in direct response to your submitted inquiry or consultation request unless you explicitly request otherwise.</p>
   </section>
 
   <!-- 4 -->
   <section class="policy-section" id="how-we-share">
     <span class="section-number">04</span>
     <h2>How We Share Your Information</h2>
-    <p>We share your information only to the limited extent necessary to deliver it to our inbox. We do not sell, rent, or trade your personal information with any third party for commercial purposes.</p>
+    <p>We share your information only to the limited extent necessary to operate our website and deliver your inquiry to our inbox. We do not sell, rent, or trade your personal information with any third party for commercial purposes.</p>
 
     <p><strong>Service Providers We Use:</strong></p>
     <ul>
       <li>
-        <strong>Web3Forms</strong> — Our contact form uses the Web3Forms API to deliver your submitted form data to our email inbox. Web3Forms receives the form fields you submit (name, email, phone, client type, service interest, and message) solely to transmit them to us. Web3Forms acts as a data processor on our behalf. Please review <a href="https://web3forms.com/privacy" target="_blank" rel="noopener">Web3Forms' Privacy Policy</a> for details.
+        <strong>Web3Forms</strong> — Both our contact form and our chat widget use the Web3Forms API to deliver submitted data to our email inbox. Web3Forms receives the fields you submit (name, email, phone, company, service interest, and/or message) solely to transmit them to us. Web3Forms acts as a data processor on our behalf. Please review <a href="https://web3forms.com/privacy" target="_blank" rel="noopener">Web3Forms' Privacy Policy</a> for details.
       </li>
       <li>
-        <strong>Cloudflare Pages</strong> — Our website is hosted on Cloudflare's global CDN. All web traffic passes through Cloudflare's network, which provides performance and security services including DDoS protection, a Web Application Firewall (WAF), and bot management. Cloudflare may process technical metadata (IP addresses, request headers) as part of this infrastructure. Please review <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">Cloudflare's Privacy Policy</a> for details.
+        <strong>Cloudflare Pages &amp; Web Analytics</strong> — Our website is hosted on Cloudflare's global CDN. All web traffic passes through Cloudflare's network, which provides performance, security, and privacy-focused analytics services. Please review <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">Cloudflare's Privacy Policy</a> for details.
+      </li>
+      <li>
+        <strong>Google Analytics 4</strong> — Anonymized, aggregated website usage data is shared with Google for analytics purposes. Google may process this data on servers located outside your country of residence. Google does not receive your name, email, phone number, or any information you submit via the contact form or chat widget. Please review <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a> for details.
       </li>
     </ul>
-    <p>Beyond these two infrastructure providers, we do not share your personal information with any other third parties unless required to do so by applicable law or a valid legal process (such as a court order or subpoena).</p>
+    <p>Beyond these infrastructure and analytics providers, we do not share your personal information with any other third parties unless required to do so by applicable law or a valid legal process (such as a court order or subpoena).</p>
   </section>
 
   <!-- 5 -->
@@ -332,8 +364,9 @@
     <span class="section-number">05</span>
     <h2>Data Retention</h2>
     <p>We retain inquiry emails — including the personal information contained in them — for as long as reasonably necessary to service your request and maintain business records in accordance with standard accounting and legal practices (typically up to three years for business correspondence).</p>
+    <p>Chat widget lead submissions are delivered to our email inbox via Web3Forms and are retained in that inbox under the same policy as contact form submissions. No chat transcript or lead data is stored in a separate database on our website infrastructure.</p>
     <p>If you would like your information deleted, you may submit a deletion request to <a href="mailto:support@metricnetworks.net">support@metricnetworks.net</a>. We will remove your personal data from our records within <strong>30 days</strong> of receiving a verified request, except where we are required by law to retain it or where it is necessary to complete an ongoing service engagement you initiated.</p>
-    <p>Cloudflare and Web3Forms maintain their own retention policies for infrastructure and transactional logs; please refer to their respective privacy policies for details.</p>
+    <p>Cloudflare, Web3Forms, and Google each maintain their own retention policies for infrastructure, transactional, and analytics logs; please refer to their respective privacy policies for details.</p>
   </section>
 
   <!-- 6 -->
@@ -344,8 +377,9 @@
     <ul>
       <li><strong>HTTPS encryption</strong> — All data in transit between your browser and our website is encrypted via TLS/SSL.</li>
       <li><strong>Cloudflare WAF</strong> — Our site is protected by Cloudflare's Web Application Firewall, which filters malicious traffic and bot requests before they reach our infrastructure.</li>
-      <li><strong>Encrypted API keys</strong> — Our Web3Forms integration key is stored as an environment variable and never exposed in client-side source code in a manner that would allow unauthorized form submissions on your behalf.</li>
-      <li><strong>No server-side database</strong> — We do not operate a database of user records; form submissions are delivered directly to our email inbox and are not stored in a web-accessible location.</li>
+      <li><strong>Encrypted API keys</strong> — Our Web3Forms integration key is embedded in our website for form delivery. While the key is technically accessible in client-side code (as required by the Web3Forms service), its scope is limited to form submission and cannot be used to read, access, or export submitted data.</li>
+      <li><strong>No server-side database</strong> — We do not operate a database of user records on our web infrastructure. Form and chat submissions are delivered directly to our email inbox and are not stored in a web-accessible location.</li>
+      <li><strong>Minimal data collection</strong> — The chat widget is a button-driven decision tree. It does not process or retain free-text conversation history beyond the specific fields (name, company, phone) you choose to submit.</li>
     </ul>
     <p>No method of electronic transmission or storage is 100% secure. While we strive to protect your information, we cannot guarantee absolute security. If you have reason to believe your interaction with us has been compromised, please contact us immediately.</p>
   </section>
@@ -362,6 +396,7 @@
       <li><strong>Right to Data Portability</strong> — You may request that we provide your information in a structured, machine-readable format.</li>
       <li><strong>Right to Object</strong> — You may object to processing of your personal information where we rely on legitimate interest as our legal basis.</li>
       <li><strong>Right to Withdraw Consent</strong> — Where processing is based on consent, you may withdraw that consent at any time without affecting the lawfulness of prior processing.</li>
+      <li><strong>Right to Opt Out of Analytics</strong> — You may opt out of Google Analytics tracking at any time using the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener">GA Opt-out Browser Add-on</a>.</li>
     </ul>
     <p>To exercise any of these rights, please contact us at <a href="mailto:support@metricnetworks.net">support@metricnetworks.net</a>. We will respond within 30 days. We may need to verify your identity before processing your request.</p>
   </section>
@@ -373,7 +408,14 @@
     <p>If you are a California resident, the California Consumer Privacy Act (CCPA) and the California Privacy Rights Act (CPRA) may grant you additional rights.</p>
     <p><strong>We do not sell your personal information.</strong> We do not share personal information with third parties for cross-context behavioral advertising. Because we do not sell or share data in these ways, we do not offer a "Do Not Sell or Share My Personal Information" opt-out link — there is nothing to opt out of.</p>
     <p>California residents may still exercise the rights described in Section 7 (access, deletion, correction, and portability) by contacting us at <a href="mailto:support@metricnetworks.net">support@metricnetworks.net</a>. We will not discriminate against you for exercising your privacy rights.</p>
-    <p>Categories of personal information collected in the past 12 months: <em>identifiers</em> (name, email, phone), <em>commercial information</em> (service interests), and <em>internet activity</em> (Cloudflare technical logs). All collected solely for responding to inquiries.</p>
+    <p>Categories of personal information collected in the past 12 months:</p>
+    <ul>
+      <li><em>Identifiers</em> — name, email address, phone number (contact form and/or chat widget)</li>
+      <li><em>Professional information</em> — company name, service interest (chat widget lead capture)</li>
+      <li><em>Commercial information</em> — service interests submitted via contact form</li>
+      <li><em>Internet or network activity</em> — anonymized page view data via Google Analytics 4 and Cloudflare Analytics</li>
+    </ul>
+    <p>All personal information is collected solely for the purpose of responding to inquiries and scheduling consultations.</p>
   </section>
 
   <!-- 9 -->
@@ -383,39 +425,46 @@
     <p>Our services are primarily directed at businesses and individuals in the United States. If you are located in the European Economic Area (EEA), United Kingdom, or Switzerland, you may have additional rights under the General Data Protection Regulation (GDPR) or equivalent legislation.</p>
     <p><strong>Legal Bases for Processing:</strong></p>
     <ul>
-      <li><strong>Legitimate Interest (Art. 6(1)(f) GDPR)</strong> — When you submit a contact form, we process your information to respond to your business inquiry, which constitutes a legitimate interest. We have determined that this interest is not overridden by your privacy rights given the limited scope of data collected and the direct, expected nature of the contact.</li>
-      <li><strong>Consent (Art. 6(1)(a) GDPR)</strong> — By voluntarily submitting the contact form, you provide consent for us to contact you in response to your inquiry.</li>
+      <li><strong>Legitimate Interest (Art. 6(1)(f) GDPR)</strong> — When you submit a contact form or chat widget lead, we process your information to respond to your business inquiry, which constitutes a legitimate interest. We have determined that this interest is not overridden by your privacy rights given the limited scope of data collected and the direct, expected nature of the contact.</li>
+      <li><strong>Consent (Art. 6(1)(a) GDPR)</strong> — By voluntarily submitting the contact form or confirming your details through the chat widget, you provide consent for us to contact you in response to your inquiry.</li>
+      <li><strong>Legitimate Interest — Analytics</strong> — We use Google Analytics 4 to analyze anonymized website usage data to improve our services. We rely on legitimate interest for this processing given the pseudonymized and aggregated nature of the data.</li>
     </ul>
-    <p>As our business and infrastructure are based in the United States, your data may be transferred to and processed in the US. We rely on standard contractual clauses and processor agreements with Cloudflare and Web3Forms to safeguard such transfers.</p>
+    <p>As our business and infrastructure are based in the United States, your data may be transferred to and processed in the US. We rely on standard contractual clauses and processor agreements with Cloudflare, Web3Forms, and Google to safeguard such transfers.</p>
     <p>If you have concerns about our data practices or wish to lodge a complaint, you have the right to contact your local data protection supervisory authority.</p>
   </section>
 
   <!-- 10 -->
   <section class="policy-section" id="cookies">
     <span class="section-number">10</span>
-    <h2>Cookies</h2>
-    <p>We use a minimal cookie footprint. We do <strong>not</strong> use advertising cookies, analytics cookies, or any tracking technologies for behavioral profiling.</p>
-    <p>The only cookie set on this website is:</p>
+    <h2>Cookies &amp; Analytics</h2>
+    <p>We use a minimal cookie footprint. We do <strong>not</strong> use advertising cookies or any tracking technologies for behavioral profiling or retargeting.</p>
+    <p>The following cookies and analytics technologies are active on this website:</p>
     <ul>
       <li>
-        <strong><code>__cf_bm</code></strong> (Cloudflare Bot Management) — This cookie is set automatically by Cloudflare to distinguish human visitors from automated bots. It is a security-essential cookie that expires after 30 minutes of inactivity. It does not track you across websites and contains no personal information about you as an individual. This cookie is strictly necessary for the secure operation of our website.
+        <strong><code>__cf_bm</code></strong> (Cloudflare Bot Management) — Set automatically by Cloudflare to distinguish human visitors from automated bots. This is a security-essential cookie that expires after 30 minutes of inactivity. It does not track you across websites and contains no personal information. It is strictly necessary for the secure operation of our website.
+      </li>
+      <li>
+        <strong>Google Analytics 4 cookies</strong> (<code>_ga</code>, <code>_ga_*</code>) — Set by GA4 to distinguish unique visitors and sessions for analytics purposes. These cookies persist for up to 2 years. They collect anonymized browsing data and do <strong>not</strong> collect your name, email, or phone number. You may opt out using the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener">Google Analytics Opt-out Browser Add-on</a>.
+      </li>
+      <li>
+        <strong>Cloudflare Web Analytics beacon</strong> — A lightweight, cookieless analytics script that collects aggregate page view data. It does not set cookies, does not fingerprint your device, and collects no personal information.
       </li>
     </ul>
-    <p>Because we set no non-essential cookies, no cookie consent banner is required. If you have concerns about this cookie, please review <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">Cloudflare's Cookie Policy</a>.</p>
+    <p>The GA4 cookies are non-essential. By continuing to use our website, you acknowledge their presence. If you prefer not to be tracked, you may use the GA opt-out tool linked above or enable "Do Not Track" in your browser settings, though we cannot guarantee all third-party services will honor that signal.</p>
   </section>
 
   <!-- 11 -->
   <section class="policy-section" id="childrens-privacy">
     <span class="section-number">11</span>
     <h2>Children's Privacy</h2>
-    <p>Our website and services are directed solely at businesses and adult individuals. We do not knowingly collect personal information from children under the age of 13. If you believe that a child under 13 has submitted personal information through our contact form, please contact us immediately at <a href="mailto:support@metricnetworks.net">support@metricnetworks.net</a> and we will delete that information promptly.</p>
+    <p>Our website and services are directed solely at businesses and adult individuals. We do not knowingly collect personal information from children under the age of 13. If you believe that a child under 13 has submitted personal information through our contact form or chat widget, please contact us immediately at <a href="mailto:support@metricnetworks.net">support@metricnetworks.net</a> and we will delete that information promptly.</p>
   </section>
 
   <!-- 12 -->
   <section class="policy-section" id="changes">
     <span class="section-number">12</span>
     <h2>Changes to This Policy</h2>
-    <p>We may update this Privacy Policy from time to time to reflect changes in our practices, legal requirements, or operational needs. When we make material changes, we will update the "Effective Date" at the top of this page. We encourage you to review this policy periodically. Your continued use of our website following any changes constitutes acceptance of the updated policy.</p>
+    <p>We may update this Privacy Policy from time to time to reflect changes in our practices, legal requirements, or operational needs — such as the addition of new features like our chat widget. When we make material changes, we will update the "Effective Date" and "Last Updated" date at the top of this page. We encourage you to review this policy periodically. Your continued use of our website following any changes constitutes acceptance of the updated policy.</p>
   </section>
 
   <!-- 13 -->
@@ -443,6 +492,6 @@
   © 2025 Metric Networks. All rights reserved. · Knoxville, TN
 </footer>
 
-<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "5664d827fac34c7eaa127d59f02921ef"}'></script><!-- End Cloudflare Web Analytics -->
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "5664d8...21ef"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>
