@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /api/
 
-Sitemap: https://www.metricnetworks.net/sitemap.xml
+Sitemap: https://metricnetworks.net/sitemap.xml
